@@ -1,7 +1,5 @@
-
-
 class Hash
-  def keys_of(*arguments)
+  def keys_of(arguments)
     array = []
     self.each do |key, value|
       arguments.each do |i|
@@ -9,8 +7,6 @@ class Hash
         array.push(key)
         end
       end 
-
-
     end
     return array
   end
